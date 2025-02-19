@@ -1,0 +1,67 @@
+publication_year,subfield_id,subfield_display_name,count,citation_count,country_code
+2024,subfields/1707,Computer Vision and Pattern Recognition,5504,6752,US
+2024,subfields/1710,Information Systems,4729,4534,US
+2024,subfields/1703,Computational Theory and Mathematics,2594,2601,US
+2024,subfields/1702,Artificial Intelligence,14159,22739,US
+2024,subfields/1705,Computer Networks and Communications,4473,2860,US
+2024,subfields/1706,Computer Science Applications,1928,1632,US
+2024,subfields/1712,Software,427,295,US
+2024,subfields/1711,Signal Processing,1661,1363,US
+2024,subfields/1709,Human-Computer Interaction,1442,979,US
+2024,subfields/1708,Hardware and Architecture,1156,520,US
+2024,subfields/1704,Computer Graphics and Computer-Aided Design,429,660,US
+2023,subfields/1707,Computer Vision and Pattern Recognition,6429,45726,US
+2023,subfields/1710,Information Systems,5434,17847,US
+2023,subfields/1703,Computational Theory and Mathematics,2942,11563,US
+2023,subfields/1702,Artificial Intelligence,16400,91591,US
+2023,subfields/1705,Computer Networks and Communications,4533,13445,US
+2023,subfields/1706,Computer Science Applications,1656,7308,US
+2023,subfields/1712,Software,387,2615,US
+2023,subfields/1711,Signal Processing,1696,6155,US
+2023,subfields/1709,Human-Computer Interaction,1370,6785,US
+2023,subfields/1708,Hardware and Architecture,1156,2459,US
+2023,subfields/1704,Computer Graphics and Computer-Aided Design,342,1850,US
+2022,subfields/1707,Computer Vision and Pattern Recognition,5966,87574,US
+2022,subfields/1710,Information Systems,5442,34570,US
+2022,subfields/1703,Computational Theory and Mathematics,2787,26233,US
+2022,subfields/1702,Artificial Intelligence,14547,160433,US
+2022,subfields/1705,Computer Networks and Communications,4362,28813,US
+2022,subfields/1706,Computer Science Applications,1553,8783,US
+2022,subfields/1712,Software,386,2272,US
+2022,subfields/1711,Signal Processing,1615,11552,US
+2022,subfields/1709,Human-Computer Interaction,1337,15137,US
+2022,subfields/1708,Hardware and Architecture,1252,5743,US
+2022,subfields/1704,Computer Graphics and Computer-Aided Design,334,3537,US
+2021,subfields/1707,Computer Vision and Pattern Recognition,7172,158519,US
+2021,subfields/1710,Information Systems,5901,64108,US
+2021,subfields/1703,Computational Theory and Mathematics,3077,37201,US
+2021,subfields/1702,Artificial Intelligence,17097,304253,US
+2021,subfields/1705,Computer Networks and Communications,5117,52655,US
+2021,subfields/1706,Computer Science Applications,1616,17263,US
+2021,subfields/1712,Software,381,2848,US
+2021,subfields/1711,Signal Processing,1890,25668,US
+2021,subfields/1709,Human-Computer Interaction,1293,18914,US
+2021,subfields/1708,Hardware and Architecture,1357,10971,US
+2021,subfields/1704,Computer Graphics and Computer-Aided Design,344,5304,US
+2020,subfields/1707,Computer Vision and Pattern Recognition,6288,196351,US
+2020,subfields/1710,Information Systems,6326,97864,US
+2020,subfields/1703,Computational Theory and Mathematics,3186,64512,US
+2020,subfields/1702,Artificial Intelligence,14663,387218,US
+2020,subfields/1705,Computer Networks and Communications,5688,86104,US
+2020,subfields/1706,Computer Science Applications,2266,26317,US
+2020,subfields/1712,Software,417,4111,US
+2020,subfields/1711,Signal Processing,1922,28375,US
+2020,subfields/1709,Human-Computer Interaction,1333,24056,US
+2020,subfields/1708,Hardware and Architecture,1377,14799,US
+2020,subfields/1704,Computer Graphics and Computer-Aided Design,393,3730,US
+2019,subfields/1707,Computer Vision and Pattern Recognition,6496,304194,US
+2019,subfields/1710,Information Systems,5926,109806,US
+2019,subfields/1703,Computational Theory and Mathematics,3007,50906,US
+2019,subfields/1702,Artificial Intelligence,13045,468664,US
+2019,subfields/1705,Computer Networks and Communications,6350,120295,US
+2019,subfields/1706,Computer Science Applications,1788,29863,US
+2019,subfields/1712,Software,438,7568,US
+2019,subfields/1711,Signal Processing,1920,44252,US
+2019,subfields/1709,Human-Computer Interaction,1302,29290,US
+2019,subfields/1708,Hardware and Architecture,1551,18869,US
+2019,subfields/1704,Computer Graphics and Computer-Aided Design,372,4159,US

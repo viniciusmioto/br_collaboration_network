@@ -1,0 +1,74 @@
+@startuml
+' Define Publication Entity
+entity "Publication" as Pub {
+  * id : VARCHAR (PK)
+  * doi : VARCHAR
+  * title : VARCHAR
+  * publication_year : INT
+  * cited_by_count : INT
+  --
+  * subfield_id : VARCHAR (FK)
+  * primary_topic_id : VARCHAR (FK)
+}
+
+' Define Subfield Entity
+entity "Subfield" as Sub {
+  * id : VARCHAR (PK)
+  * display_name : VARCHAR
+}
+
+' Define Primary Topic Entity
+entity "PrimaryTopic" as Topic {
+  * id : VARCHAR (PK)
+  * display_name : VARCHAR
+}
+
+' Define CitationCount Entity (for counts_by_year)
+entity "CitationCount" as CC {
+  * publication_id : VARCHAR (PK, FK)
+  * year_since : INT (PK)
+  * citations : INT
+}
+
+' Define Author Entity
+entity "Author" as A {
+  * id : VARCHAR (PK)
+  * name : VARCHAR
+}
+
+' Define Country Entity
+entity "Country" as C {
+  * id : VARCHAR (PK)
+  * display_name : VARCHAR
+}
+
+' Define Institution Entity
+entity "Institution" as Inst {
+  * id : VARCHAR (PK)
+  * display_name : VARCHAR
+  * country_id : VARCHAR (FK)
+}
+
+' Define Authorship join table (Publication - Author)
+entity "Authorship" as Auth {
+  * publication_id : VARCHAR (PK, FK)
+  * author_id : VARCHAR (PK, FK)
+  * author_order : INT
+}
+
+' Define AuthorInstitution join table (Author - Institution)
+entity "AuthorInstitution" as AI {
+  * author_id : VARCHAR (PK, FK)
+  * institution_id : VARCHAR (PK, FK)
+}
+
+' Relationships
+Pub }|--|| Sub : "belongs to"
+Pub }|--|| Topic : "has primary topic"
+Pub ||--o{ CC : "has"
+Pub ||--o{ Auth : "written by"
+A ||--o{ Auth : "contributes to"
+A ||--o{ AI : "affiliated with"
+Inst ||--o{ AI : "has"
+Inst }|--|| C : "located in"
+@enduml

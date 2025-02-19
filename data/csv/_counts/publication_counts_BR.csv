@@ -1,0 +1,67 @@
+publication_year,subfield_id,subfield_display_name,count,citation_count,country_code
+2024,subfields/1707,Computer Vision and Pattern Recognition,444,195,BR
+2024,subfields/1710,Information Systems,1864,361,BR
+2024,subfields/1703,Computational Theory and Mathematics,267,229,BR
+2024,subfields/1702,Artificial Intelligence,1112,632,BR
+2024,subfields/1705,Computer Networks and Communications,521,328,BR
+2024,subfields/1706,Computer Science Applications,262,103,BR
+2024,subfields/1712,Software,43,21,BR
+2024,subfields/1711,Signal Processing,123,93,BR
+2024,subfields/1709,Human-Computer Interaction,156,105,BR
+2024,subfields/1708,Hardware and Architecture,72,10,BR
+2024,subfields/1704,Computer Graphics and Computer-Aided Design,25,13,BR
+2023,subfields/1707,Computer Vision and Pattern Recognition,561,1039,BR
+2023,subfields/1710,Information Systems,3363,2182,BR
+2023,subfields/1703,Computational Theory and Mathematics,433,815,BR
+2023,subfields/1702,Artificial Intelligence,1415,3070,BR
+2023,subfields/1705,Computer Networks and Communications,638,1269,BR
+2023,subfields/1706,Computer Science Applications,337,623,BR
+2023,subfields/1712,Software,66,73,BR
+2023,subfields/1711,Signal Processing,212,448,BR
+2023,subfields/1709,Human-Computer Interaction,192,249,BR
+2023,subfields/1708,Hardware and Architecture,84,160,BR
+2023,subfields/1704,Computer Graphics and Computer-Aided Design,27,26,BR
+2022,subfields/1707,Computer Vision and Pattern Recognition,566,2287,BR
+2022,subfields/1710,Information Systems,3196,4965,BR
+2022,subfields/1703,Computational Theory and Mathematics,448,1611,BR
+2022,subfields/1702,Artificial Intelligence,1380,6199,BR
+2022,subfields/1705,Computer Networks and Communications,687,2463,BR
+2022,subfields/1706,Computer Science Applications,274,812,BR
+2022,subfields/1712,Software,53,125,BR
+2022,subfields/1711,Signal Processing,194,846,BR
+2022,subfields/1709,Human-Computer Interaction,209,2134,BR
+2022,subfields/1708,Hardware and Architecture,90,188,BR
+2022,subfields/1704,Computer Graphics and Computer-Aided Design,30,40,BR
+2021,subfields/1707,Computer Vision and Pattern Recognition,717,5087,BR
+2021,subfields/1710,Information Systems,3377,7967,BR
+2021,subfields/1703,Computational Theory and Mathematics,448,3152,BR
+2021,subfields/1702,Artificial Intelligence,1597,10163,BR
+2021,subfields/1705,Computer Networks and Communications,829,4866,BR
+2021,subfields/1706,Computer Science Applications,341,2284,BR
+2021,subfields/1712,Software,78,330,BR
+2021,subfields/1711,Signal Processing,218,1029,BR
+2021,subfields/1709,Human-Computer Interaction,198,986,BR
+2021,subfields/1708,Hardware and Architecture,135,455,BR
+2021,subfields/1704,Computer Graphics and Computer-Aided Design,35,183,BR
+2020,subfields/1707,Computer Vision and Pattern Recognition,739,7442,BR
+2020,subfields/1710,Information Systems,3410,15686,BR
+2020,subfields/1703,Computational Theory and Mathematics,418,4473,BR
+2020,subfields/1702,Artificial Intelligence,1647,13895,BR
+2020,subfields/1705,Computer Networks and Communications,900,7301,BR
+2020,subfields/1706,Computer Science Applications,320,2049,BR
+2020,subfields/1712,Software,99,704,BR
+2020,subfields/1711,Signal Processing,223,1818,BR
+2020,subfields/1709,Human-Computer Interaction,214,960,BR
+2020,subfields/1708,Hardware and Architecture,144,483,BR
+2020,subfields/1704,Computer Graphics and Computer-Aided Design,35,131,BR
+2019,subfields/1707,Computer Vision and Pattern Recognition,787,9165,BR
+2019,subfields/1710,Information Systems,2528,9401,BR
+2019,subfields/1703,Computational Theory and Mathematics,407,3624,BR
+2019,subfields/1702,Artificial Intelligence,1576,16063,BR
+2019,subfields/1705,Computer Networks and Communications,1016,11297,BR
+2019,subfields/1706,Computer Science Applications,388,2159,BR
+2019,subfields/1712,Software,99,812,BR
+2019,subfields/1711,Signal Processing,261,1742,BR
+2019,subfields/1709,Human-Computer Interaction,226,1396,BR
+2019,subfields/1708,Hardware and Architecture,101,779,BR
+2019,subfields/1704,Computer Graphics and Computer-Aided Design,49,254,BR

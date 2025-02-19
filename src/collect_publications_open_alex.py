@@ -5,10 +5,11 @@ import logging
 import time
 from typing import Dict, List
 
+COUNTRY_CODE = "ID" # Indonesia
+
 PUBLICATION_YEAR = [
-    # "2025", # already collected
-    # "2024", # already collected
-    # "2023", # already collected
+    "2024",
+    "2023",
     "2022",
     "2021",
     "2020",
@@ -106,7 +107,7 @@ def fetch_all_works(params: Dict, logger: logging.Logger) -> List[Dict]:
             response.raise_for_status()
             page_data = response.json()
             all_works.extend(page_data.get("results", []))
-            time.sleep(1.25)  # Respectful delay between requests
+            time.sleep(5)  # Respectful delay between requests
         except requests.exceptions.RequestException as e:
             logger.error(f"Failed to fetch page {page}: {e}")
             raise
@@ -119,6 +120,12 @@ def process_work(work: Dict) -> Dict:
     """
     Processes a single work to extract and flatten required fields,
     while removing DOI and OpenAlex URL prefixes.
+    
+    For the counts_by_year field, instead of keeping the original years,
+    the citations are saved with keys representing the offset relative to the publication year.
+    For example, if a work was published in 2020:
+      - The number of citations in 2020 will be stored as "0_year"
+      - The number of citations in 2021 will be stored as "1_year", etc.
     """
     processed = {
         "id": process_openalex_id(work.get("id")),
@@ -127,9 +134,11 @@ def process_work(work: Dict) -> Dict:
         "publication_year": work.get("publication_year"),
         "authorships": [],
         "subfield": {},
+        "cited_by_count": work.get("cited_by_count"),
+        "counts_by_year": ""  # will update below
     }
 
-    # Process each authorship
+    # Process authorships
     authorships = work.get("authorships", [])
     for authorship in authorships:
         author_info = authorship.get("author", {})
@@ -148,22 +157,33 @@ def process_work(work: Dict) -> Dict:
         }
         processed["authorships"].append(processed_author)
 
-    # Process subfield from primary_topic
+    # Process primary topic and subfield
     primary_topic = work.get("primary_topic", {})
-
     processed_topic = {
         "id": process_openalex_id(primary_topic.get("id")),
         "display_name": primary_topic.get("display_name"),
     }
-
     processed["primary_topic"] = processed_topic
 
     subfield = primary_topic.get("subfield", {})
-
     processed["subfield"] = {
         "id": process_openalex_id(subfield.get("id")),
         "display_name": subfield.get("display_name"),
     }
+
+    # Process counts_by_year: shift years relative to the publication year
+    publication_year = work.get("publication_year")
+    counts_by_year_data = work.get("counts_by_year", [])
+    offset_citations = {}
+    if counts_by_year_data and publication_year:
+        for item in counts_by_year_data:
+            # Compute offset: citation year minus publication year
+            offset = item["year"] - publication_year
+            if offset >= 0:
+                key = f"{offset}_year"
+                offset_citations[key] = item["cited_by_count"]
+            # If offset is negative, skip the entry as it is likely a data error.
+    processed["counts_by_year"] = json.dumps(offset_citations)
 
     # Convert complex fields to JSON strings
     processed["authorships"] = json.dumps(processed["authorships"])
@@ -187,8 +207,10 @@ def main():
 
             # Configure API parameters
             params = {
-                "select": "id,doi,title,authorships,publication_year,primary_topic",
-                "filter": "type:article,institutions.country_code:BR,primary_topic.field.id:17,publication_year:{}".format(year),
+                "select": "id,doi,title,authorships,publication_year,primary_topic,cited_by_count,counts_by_year",
+                "filter": "type:article,institutions.country_code:{},primary_topic.field.id:17,publication_year:{}".format(
+                    COUNTRY_CODE, year
+                ),
                 "per_page": 25,
                 "mailto": email,  # Uncomment email to be respectful
             }
@@ -203,9 +225,9 @@ def main():
 
             # Create and save DataFrame
             df = pd.DataFrame(processed_works)
-            df.to_csv("open_alex_publications.csv", index=False)
+            df.to_csv(f"open_alex_publications_{year}.csv", index=False)
             logger.info(
-                f"Data saved to 'open_alex_publications_{year}.csv' with {len(df)} entries."
+                f"Data saved to 'open_alex_publications_{year}_{COUNTRY_CODE}.csv' with {len(df)} entries."
             )
 
     except Exception as e:

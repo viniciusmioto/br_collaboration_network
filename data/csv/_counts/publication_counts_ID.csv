@@ -1,0 +1,67 @@
+publication_year,subfield_id,subfield_display_name,count,citation_count,country_code
+2024,subfields/1707,Computer Vision and Pattern Recognition,733,244,ID
+2024,subfields/1710,Information Systems,14276,3133,ID
+2024,subfields/1703,Computational Theory and Mathematics,191,72,ID
+2024,subfields/1702,Artificial Intelligence,3793,839,ID
+2024,subfields/1705,Computer Networks and Communications,524,142,ID
+2024,subfields/1706,Computer Science Applications,787,201,ID
+2024,subfields/1712,Software,21,3,ID
+2024,subfields/1711,Signal Processing,169,61,ID
+2024,subfields/1709,Human-Computer Interaction,228,47,ID
+2024,subfields/1708,Hardware and Architecture,27,7,ID
+2024,subfields/1704,Computer Graphics and Computer-Aided Design,64,5,ID
+2023,subfields/1707,Computer Vision and Pattern Recognition,902,1641,ID
+2023,subfields/1710,Information Systems,32271,26084,ID
+2023,subfields/1703,Computational Theory and Mathematics,352,548,ID
+2023,subfields/1702,Artificial Intelligence,6374,6217,ID
+2023,subfields/1705,Computer Networks and Communications,511,596,ID
+2023,subfields/1706,Computer Science Applications,1532,1390,ID
+2023,subfields/1712,Software,27,12,ID
+2023,subfields/1711,Signal Processing,177,203,ID
+2023,subfields/1709,Human-Computer Interaction,318,677,ID
+2023,subfields/1708,Hardware and Architecture,37,24,ID
+2023,subfields/1704,Computer Graphics and Computer-Aided Design,85,43,ID
+2022,subfields/1707,Computer Vision and Pattern Recognition,691,1897,ID
+2022,subfields/1710,Information Systems,31288,55527,ID
+2022,subfields/1703,Computational Theory and Mathematics,374,1044,ID
+2022,subfields/1702,Artificial Intelligence,5587,11157,ID
+2022,subfields/1705,Computer Networks and Communications,426,1343,ID
+2022,subfields/1706,Computer Science Applications,1437,2517,ID
+2022,subfields/1712,Software,17,11,ID
+2022,subfields/1711,Signal Processing,130,301,ID
+2022,subfields/1709,Human-Computer Interaction,218,700,ID
+2022,subfields/1708,Hardware and Architecture,19,19,ID
+2022,subfields/1704,Computer Graphics and Computer-Aided Design,94,142,ID
+2021,subfields/1707,Computer Vision and Pattern Recognition,840,3988,ID
+2021,subfields/1710,Information Systems,30131,90380,ID
+2021,subfields/1703,Computational Theory and Mathematics,402,1376,ID
+2021,subfields/1702,Artificial Intelligence,6267,17834,ID
+2021,subfields/1705,Computer Networks and Communications,433,1779,ID
+2021,subfields/1706,Computer Science Applications,1676,4176,ID
+2021,subfields/1712,Software,23,50,ID
+2021,subfields/1711,Signal Processing,165,616,ID
+2021,subfields/1709,Human-Computer Interaction,238,852,ID
+2021,subfields/1708,Hardware and Architecture,22,70,ID
+2021,subfields/1704,Computer Graphics and Computer-Aided Design,90,95,ID
+2020,subfields/1707,Computer Vision and Pattern Recognition,811,5704,ID
+2020,subfields/1710,Information Systems,24287,96797,ID
+2020,subfields/1703,Computational Theory and Mathematics,294,1340,ID
+2020,subfields/1702,Artificial Intelligence,5678,19713,ID
+2020,subfields/1705,Computer Networks and Communications,483,3330,ID
+2020,subfields/1706,Computer Science Applications,1308,4911,ID
+2020,subfields/1712,Software,19,98,ID
+2020,subfields/1711,Signal Processing,169,749,ID
+2020,subfields/1709,Human-Computer Interaction,192,1044,ID
+2020,subfields/1708,Hardware and Architecture,34,46,ID
+2020,subfields/1704,Computer Graphics and Computer-Aided Design,82,143,ID
+2019,subfields/1707,Computer Vision and Pattern Recognition,793,4959,ID
+2019,subfields/1710,Information Systems,19833,82708,ID
+2019,subfields/1703,Computational Theory and Mathematics,325,1077,ID
+2019,subfields/1702,Artificial Intelligence,4982,22201,ID
+2019,subfields/1705,Computer Networks and Communications,513,2698,ID
+2019,subfields/1706,Computer Science Applications,986,3865,ID
+2019,subfields/1712,Software,23,82,ID
+2019,subfields/1711,Signal Processing,183,1134,ID
+2019,subfields/1709,Human-Computer Interaction,150,864,ID
+2019,subfields/1708,Hardware and Architecture,39,45,ID
+2019,subfields/1704,Computer Graphics and Computer-Aided Design,58,105,ID
