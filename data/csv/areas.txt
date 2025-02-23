@@ -1,25 +1,25 @@
-BR
+Brazil
 Computer Science Applications
 Computer Networks and Communications
 Software
 General Computer Science
 Artificial Intelligence
 
-US
+United States
 Computer Science Applications
 Software
 Computer Networks and Communications
 Artificial Intelligence
 Information Systems
 
-CN
+China
 Computer Science Applications
 Computer Networks and Communications
 Artificial Intelligence
 Software
 Information Systems
 
-IN
+India
 Computer Networks and Communications
 Computer Science Applications
 Artificial Intelligence

@@ -5,7 +5,7 @@ import logging
 import time
 from typing import Dict, List
 
-COUNTRY_CODE = "ID"  
+COUNTRY_CODE = "IN"  
 
 PUBLICATION_YEAR = [
     "2024",
@@ -81,7 +81,7 @@ def main():
         logger.info("Successfully read email address.")
 
         # Load unique subfields from CSV (assumes columns: subfield_id, subfield_display_name)
-        subfields_df = pd.read_csv("../data/csv/unique_subfields.csv")
+        subfields_df = pd.read_csv("../data/csv/openalex/unique_subfields.csv")
         if subfields_df.empty:
             logger.error("No subfields loaded from unique_subfields.csv. Exiting.")
             return
@@ -97,7 +97,7 @@ def main():
                 # Build filter query string.
                 # Adjust the filter as needed. Here, we assume primary_topic.field.id is 17.
                 filter_query = (
-                    f"type:article,"
+                    f"type:types/article|types/book-chapter,"
                     f"institutions.country_code:{COUNTRY_CODE},"
                     f"primary_topic.field.id:17,"
                     f"primary_topic.subfield.id:{subfield_id},"

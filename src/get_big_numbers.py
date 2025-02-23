@@ -45,7 +45,7 @@ def main():
         # Build the API endpoint using the country code
         works_url = (
             f"https://api.openalex.org/works?page=1&"
-            f"filter=primary_topic.field.id:fields/17,publication_year:2019+-+2024,type:types/article,"
+            f"filter=primary_topic.field.id:fields/17,publication_year:2019+-+2024,type:types/article|types/book-chapter,"
             f"authorships.countries:{country}&cited_by_count_sum=true&per_page=1"
         )
 
