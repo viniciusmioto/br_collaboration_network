@@ -1,1 +1,25 @@
 https://api.openalex.org/works?select=id,doi,title,authorships,publication_year,primary_topic&filter=type:article,institutions.country_code:BR,primary_topic.field.id:17,publication_year:2024&per_page=25
+
+
+
+Computer Vision and Pattern Recognition
+
+Information Systems
+
+Computational Theory and Mathematics
+
+Artificial Intelligence
+
+Computer Networks and Communications
+
+Computer Science Applications
+
+Software
+
+Signal Processing
+
+Human-Computer Interaction
+
+Hardware and Architecture
+
+Computer Graphics and Computer-Aided Design
