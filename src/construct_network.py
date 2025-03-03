@@ -5,6 +5,21 @@ from itertools import combinations
 from collections import defaultdict
 
 
+SUBFIELDS = [
+    "Computer Vision and Pattern Recognition",
+    "Information Systems",
+    "Computational Theory and Mathematics",
+    "Artificial Intelligence",
+    "Computer Networks and Communications",
+    "Computer Science Applications",
+    "Software",
+    "Signal Processing",
+    "Human-Computer Interaction",
+    "Hardware and Architecture",
+    "Computer Graphics and Computer-Aided Design"
+]
+
+
 def parse_json_field(field_str):
     """
     Safely parse a JSON-formatted string.
@@ -145,6 +160,17 @@ def filter_publications_by_citation_count(
     return filtered_df
 
 
+def filter_publications_by_year(
+    df: pd.DataFrame, year: int
+) -> pd.DataFrame:
+    """
+    Filters the DataFrame to include only publications for a specific year.
+    """
+    filtered_df = df[df["publication_year"] == year]
+    return filtered_df
+
+
+
 def main():
     """
     Main function that loads the publications data, builds the collaboration network,
@@ -153,30 +179,28 @@ def main():
     # Load the CSV file into a pandas DataFrame.
     # Adjust the file name/path as needed.
     try:
-        df = pd.read_csv("../data/csv/openalex/br_publications.csv")
+        full_df = pd.read_csv("../data/csv/openalex/br_publications.csv")
     except Exception as e:
         print(f"Error reading CSV file: {e}")
         return
 
-    # Filter the DataFrame to include only a subfield of interest
-    # subfield = "Computational Theory and Mathematics"
-    # df = filter_subfielf_publications(df, subfield)
+    for subfield in SUBFIELDS:
+        # Filter the DataFrame to include only a subfield of interest
+        subfielf_df = filter_subfielf_publications(full_df, subfield)
 
-    # Filter the DataFrame to include only publications with more than a certain number of citations
-    num_citations = 100
-    df = filter_publications_by_citation_count(df, num_citations)
-    print(len(df))
+        for year in range(2019, 2025):
+            df = filter_publications_by_year(subfielf_df, year)
 
-    # Build the collaboration network graph
-    G = build_collaboration_network(df)
+            # Build the collaboration network graph
+            G = build_collaboration_network(df)
 
-    # Write the graph to a GEXF file for visualization (e.g., in Gephi)
-    output_file = "collabnet.gexf"
-    try:
-        nx.write_gexf(G, output_file)
-        print(f"Graph successfully written to {output_file}")
-    except Exception as e:
-        print(f"Error writing GEXF file: {e}")
+            # Write the graph to a GEXF file for visualization (e.g., in Gephi)
+            output_file = str(f"../data/graphs/subfields/{subfield}_{year}.gexf")
+            try:
+                nx.write_gexf(G, output_file)
+                print(f"Graph successfully written to {output_file}")
+            except Exception as e:
+                print(f"Error writing GEXF file: {e}")
 
 
 if __name__ == "__main__":
