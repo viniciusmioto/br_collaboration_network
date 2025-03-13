@@ -160,6 +160,7 @@
   - China collaborated primarily with scientifically advanced countries, accounting for over 80% of IRC articles.
   - Identified core journals in 22 ESI fields and analyzed the distribution of journals and articles.
 
+
 ## pessoa_jr_2022_a_geographic_analysis.pdf
 
 - **Research questions or problems:**
@@ -177,24 +178,6 @@
 - **Results and conclusions:**
   - Detailed analysis of interdisciplinary collaboration across Brazil's geographic regions and knowledge areas.
   - Found patterns linked to economic disparities and the concentration of research excellence.
-
-## rodriguez_2010_new_approach_visualization.pdf
-
-- **Research questions or problems:**
-  - Create visual representations to analyze international scientific collaboration.
-  - Identify the main geographical axes of research output and collaboration intensity.
-
-- **Approach or methodology:**
-  - Developed a methodology for visualizing international scientific collaboration using indicators of production and impact.
-  - Used Web of Science data and Journal Impact Factors to normalize and calculate impact for visualizations.
-
-- **Databases or data sources:**
-  - Data from Web of Science (Science Citation Index, Social Sciences Citation Index, Arts & Humanities) for all 2004 documents.
-  - Journal Citation Report (JCR) for Impact Factors.
-
-- **Results and conclusions:**
-  - Created visual representations to analyze collaboration patterns and their impact.
-  - Suggested that the methodology is valuable for studying collaboration patterns at various levels of aggregation.
 
 ## wainer_2009_scientific_production.pdf
 
@@ -214,6 +197,105 @@
   - Brazil had the largest computer science production in Latin America but lagged behind major countries like the USA and China.
   - Brazil's publication distribution was similar to India and Russia, but with significant differences in conference and journal publication ratios.
 
+## okamura_century_global_collaboration_2023.pdf
+
+- **Research questions or problems:**  
+This paper examines the **evolution of international scientific collaboration over the past half-century**, using large-scale bibliometric data. It explores:
+  - How **international collaboration clusters have formed and changed** over time.
+  - The shifting role of **top-tier countries**, particularly the **United States and China**, in global research collaboration.
+  - The phenomenon of a **“Shrinking World”**, where research collaboration has increased globally, leading to tighter integration between countries.
+
+- **Approach or methodology:**  
+  - The study employs **bibliometric analysis using OpenAlex**, an open bibliometric database.
+  - It applies **hierarchical clustering analysis (HCA)** to identify and visualize **collaboration clusters** for different scientific disciplines.
+  - **Jaccard distance-based metrics** are used to quantify the proximity between countries in terms of their co-authored research outputs.
+  - It introduces the **International Coupling Distance (ICD)** as a measure of collaboration intensity over time.
+
+**Databases or data sources:**  
+  - **OpenAlex API**, a fully open bibliographic database launched in 2022, replacing Microsoft Academic Graph (MAG).
+  - OpenAlex compiles metadata from **CrossRef, ORCID, ROR, PubMed, arXiv, and Zenodo**.
+  - The study uses data on **239 million works**, including journal articles, conference papers, preprints, and book chapters.
+
+**Results and conclusions:**  
+  - **China's dramatic rise in research output** is evident across multiple disciplines, surpassing the United States in areas like **Artificial Intelligence, Quantum Science, and Biotechnology**.
+  - The **United States and China moved closer together in research collaboration for decades but began moving apart after 2019**, likely due to geopolitical tensions.
+  - **Collaboration rates have increased globally**, with Europe maintaining high levels of international cooperation.
+  - A **hierarchical clustering analysis** reveals **distinct international collaboration clusters**, showing a gradual reorganization of research alliances.
+  - The **“Shrinking World” phenomenon** is supported by a decline in the **International Coupling Distance (ICD)**, indicating increased international collaboration over time.
+  - The study emphasizes that **open bibliometrics platforms like OpenAlex provide a viable alternative** to commercial databases and enhance transparency in scientometric research.
+
+
+---
+
+# Interdisciplinary Computer Science
+
+## bird_2009_structure_and_dynamics.pdf
+
+- **Research questions or problems:**
+  - Study the **complex network of collaboration relationships** in computer science.
+  - Quantify informal differences between research areas and investigate collaboration patterns at various levels.
+  - Examine the **interdisciplinary nature** of research areas and explore whether there are **well-defined sub-areas**.
+
+- **Approach or methodology:**
+  - **Collaboration graph extracted from the DBLP bibliographic database** with additional **extrinsic data** for defining research areas.
+  - Applied **network analysis methods** including **topological measures**, **community structure analysis**, **betweenness centralization**, and **longitudinal assortativity**.
+  - Performed **principal component analysis** and studied **author overlap and migration patterns** across areas.
+
+- **Databases or data sources:**
+  - Primary data from the **DBLP bibliographic database** (XML dump, February 4th, 2008).
+  - **Extrinsic data** manually validated for research area definitions.
+
+- **Results and conclusions:**
+  - Found **significant differences in collaboration patterns** among research areas.
+  - Identified that **PL and SE are interdisciplinary**, while **AI and ARCH are not**.
+  - **Databases (DB) is well-integrated**, while **SE is fragmented**.
+  - Presented empirical evidence supporting some computer science folklore.
+  - Network analysis highlighted subtle properties of collaboration beyond basic distributions.
+
+
+## franceschet_2011_collaboration_computer.pdf
+
+- **Research questions or problems:**
+  - Study **collaboration in computer science** from a **network science perspective**, focusing on bibliometric properties like **discipline size**, **scholar productivity**, and **collaboration levels**.
+  - Examine **global network properties** like **reachability**, **separation distance**, **resilience**, **clustering**, and **assortativity** over time since 1960.
+
+- **Approach or methodology:**
+  - Built **networks of collaboration** based on co-authorship, including **affiliation networks** and **author-author collaboration networks**.
+  - Used **network science metrics** like **degree distribution**, **transitivity coefficient**, and **clustering coefficient**.
+  - Conducted **longitudinal analysis** of networks from 1960 to 2008.
+
+- **Databases or data sources:**
+  - Data from **DBLP bibliographic database** (XML version downloaded in early 2010).
+  - Analyzed publications from **1936 to 2008**, focusing on **1960 to 2008** for temporal analysis.
+
+- **Results and conclusions:**
+  - Found **highly asymmetric productivity** in computer science, consistent with **Lotka's law**.
+  - The **collaboration level** is moderate, with two or three authors per paper being typical.
+  - **Conference papers** are more collaborative than journal papers.
+  - The computer science collaboration network shows **small-world properties** and evidence of **assortative mixing**.
+  - Temporal analysis revealed a **steady expansion** of the field, with **conferences becoming the dominant publication venue** after 1983.
+  - Highlighted the differences in collaboration patterns between **conference and journal collaborations**.
+
+## druszcz_citation_disparity_2024.pdf
+
+- **Research questions or problems:**
+  - Investigate the **citation disparity** across different sub-areas of Brazilian Computer Science.
+  - Explore how using **citations as a metric** can lead to unfair comparisons, and suggest methods to mitigate this disparity, particularly with the **universal fit citation**.
+
+- **Approach or methodology:**
+  - Analyzed **citation data** and used the **power-law distribution** for scientific citations.
+  - Introduced the **complementary cumulative distribution function** to quantify disparity.
+  - Used the **universal fit citation** to normalize citations based on average citations in each research area and year.
+
+- **Databases or data sources:**
+  - Data from **CSIndexBr**, **DBLP**, and **OpenCitations** (collected between November 2022 and January 2023).
+
+- **Results and conclusions:**
+  - Found **significant citation disparity** across sub-areas, with certain areas like **Computer Vision** and **Security** being more highly cited than others like **Algorithms** and **Formal Methods**.
+  - The **universal fit citation** helped reduce the disparity, suggesting that it could provide fairer comparisons of scientific impact across areas.
+
+---
+
 # OpenAlex
 
 ## "culbert_reference_coverage_analysis_openalex_2024.pdf"
@@ -230,8 +312,6 @@ The primary data sources are **OpenAlex, Web of Science, and Scopus**. A **'Shar
 - **Results and conclusions:**  
 OpenAlex shows comparable **average source reference numbers** and internal coverage rates to WoS and Scopus, but it has slight overcounting and undercounting in some journals. It has **higher ORCID coverage**, lower **abstract coverage**, and similar **Open Access status coverage** compared to the proprietary databases. The study concludes with a **recommendation for caution** when using OpenAlex for scientometric studies due to data quality issues and potential volatility.
 
----
-
 ## "estevez_new_trends_bibliometric_2023.pdf"
 
 - **Research questions or problems:**  
@@ -245,8 +325,6 @@ The study examines **44 bibliometric APIs**, including those from providers like
 
 - **Results and conclusions:**  
 The study finds that **Clarivate Analytics and Elsevier offer highly versatile APIs**, while **non-profit organizations** often promote open science via their APIs. Most APIs provide **free access** for academic use, though metadata retrieval may have limitations. The study concludes that **no single API** meets all bibliometric needs, recommending the **combination of multiple APIs** for comprehensive data coverage.
-
----
 
 ## "ortega_indexation_2024.pdf"
 
